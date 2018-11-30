@@ -1,4 +1,4 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
         System.out.println("-- Test --");
         LinkedList<Integer> list = new LinkedList<>();
@@ -16,13 +16,13 @@ public class main {
         list.insertAt(8, new ListElement<Integer>(8));
         list.pushEnd(new ListElement<Integer>(10));
         
-        for (int i = 0; i < list.size; i++) {
+        for (int i = 0; i < list.sizeIndex(); i++) {
             System.out.println(list.getDataAt(i));
         }
 
         System.out.println("--------- Size of list #1 ---------");
 
-        System.out.println("Size: " + list.size);
+        System.out.println("Size: " + list.sizeIndex());
         
         System.out.println("--------- First Index Of ---------");
 
@@ -43,13 +43,13 @@ public class main {
         list.removeAt(15);
         list.removeAt(4);
 
-        for (int i = 0; i < list.size; i++) {
+        for (int i = 0; i < list.sizeIndex(); i++) {
             System.out.println(list.getDataAt(i));
         }
 
         System.out.println("--------- Size of list #2 ---------");
 
-        System.out.println("Size: " + list.size);
+        System.out.println("Size: " + list.sizeIndex());
 
         System.out.println("--------- Remove ---------");
 
@@ -57,13 +57,13 @@ public class main {
         list.remove(7);
         list.remove(2);
 
-        for (int i = 0; i < list.size; i++) {
+        for (int i = 0; i < list.sizeIndex(); i++) {
             System.out.println(list.getDataAt(i));
         }
 
         System.out.println("--------- Size of list #3 ---------");
 
-        System.out.println("Size: " + list.size);
+        System.out.println("Size: " + list.sizeIndex());
 
         System.out.println("--------- Remove when empty---------");
 
@@ -77,6 +77,6 @@ public class main {
 
         System.out.println("--------- Size of list #4 ---------");
 
-        System.out.println("Size: " + list.size);
+        System.out.println("Size: " + list.sizeIndex());
     }
 }

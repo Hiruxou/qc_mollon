@@ -1,6 +1,6 @@
 public class LinkedList<T> {
 
-    public int size;
+    private int size;
     ListElement<T> start;
     ListElement<T> end;
 
@@ -134,5 +134,9 @@ public class LinkedList<T> {
         }
 
         return -1;
+    }
+
+    public int sizeIndex(){
+        return this.size;
     }
 }
