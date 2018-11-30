@@ -1,8 +1,13 @@
 plugins {
     id 'java'
     id 'checkstyle'
+    id 'jacoco'
 }
 
 repositories {
     jcenter()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
 }
