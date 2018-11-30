@@ -1,5 +1,6 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 public class TestLinkedList {
   @Test
@@ -7,5 +8,5 @@ public class TestLinkedList {
     LinkedList<String> list = new LinkedList<>();
     list.pushStart(new ListElement<String>("Toto"));
     assertEquals(15, list.sizeIndex());
-    }
+  }
 }
