@@ -1,6 +1,7 @@
 public class LinkedList<T> {
 
   private int size;
+  private int elementNotInside = -1;
   ListElement<T> start;
   ListElement<T> end;
 
@@ -40,7 +41,7 @@ public class LinkedList<T> {
   public T getDataAt(int position) {
     ListElement<T> element = getAt(position);
     if (element == null) {
-      return null;
+      throw new IndexOutOfBoundsException("Out of range");
     }
     return element.data;
   }
@@ -127,7 +128,9 @@ public class LinkedList<T> {
    */
   public void removeAt(int position) {
     ListElement<T> currentElement = this.getAt(position);
-    //TODO: throw exception if null
+    if (currentElement == null) {
+      throw new IndexOutOfBoundsException("Out of range");
+    }
     if (currentElement != null) {
       this.remove(currentElement);
     }

@@ -32,12 +32,11 @@ public class TestLinkedList {
     assertEquals("Tete", list.getDataAt(2));
   }
 
-  @Test
+  @Test (expected = IndexOutOfBoundsException.class)
   public void testPushStartNull() {
     LinkedList<String> list = new LinkedList<>();
     list.insertAt(1, new ListElement<String>("Titi"));
     list.removeAt(1);
-    assertEquals(null, list.getDataAt(1));
   }
 
   @Test
