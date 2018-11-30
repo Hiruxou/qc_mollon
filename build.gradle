@@ -11,3 +11,17 @@ repositories {
 dependencies {
   testCompile 'junit:junit:4.12'
 }
+
+jacocoTestCoverageVerification {
+  violationRules {
+    rule {
+      limit {
+        counter = 'INSTRUCTION'
+        value = 'COVEREDRATIO'
+        minimum = 0.7
+      }
+    }
+  }
+}
+
+check.dependsOn jacocoTestCoverageVerification
