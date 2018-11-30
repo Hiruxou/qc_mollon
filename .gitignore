@@ -2,4 +2,4 @@
 *.vscode
 *.md
 *.gradle
-build
+build/
