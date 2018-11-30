@@ -24,4 +24,8 @@ jacocoTestCoverageVerification {
   }
 }
 
+checkstyle {
+    toolVersion = "8.14"
+}
+
 check.dependsOn jacocoTestCoverageVerification
