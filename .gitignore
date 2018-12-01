@@ -3,3 +3,5 @@
 *.md
 *.gradle
 build/
+*.project
+bin/
